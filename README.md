@@ -1,6 +1,7 @@
 # B站AI视频分析助手
 
-面向 Bilibili 视频学习场景的 Edge/Chromium 侧边栏 AI 扩展。它可以在视频页中生成快速摘要、细节摘要、图片分析、继续对话、思维导图，并支持用户安装自定义 Skill。
+面向 Bilibili 视频学习场景的 Edge/Chromium 侧边栏 AI 扩展。它可以在视频页中生成快速摘要、细节摘要、图片分析、继续对话、思维导图，支持视频时长2.5h以内，并支持用户安装自定义 Skill。
+（本人本科大一，在b站看看高数时，觉得视频太长了，用codex磋了一个插件，目前只打通了千问大模型，其他的模型不能用，希望有大佬指点）
 
 ## 功能亮点
 
@@ -10,7 +11,6 @@
 - 思维导图：根据音频、字幕和必要画面信息生成结构化导图。
 - 继续对话：支持附件、历史会话、复制、翻译、点赞和点踩反馈。
 - Skill 安装：用户可以上传或粘贴自己的 Skill JSON 来增强回答风格。
-- 多供应商：支持 Qwen、DeepSeek、GLM、MiniMax、MiMo、Kimi 和自定义 OpenAI 兼容接口。
 
 ## 项目结构
 
@@ -57,28 +57,6 @@ corepack pnpm --filter @app/extension build
 ```
 
 构建产物在 `apps/extension/dist`。上架商店时只压缩 `dist` 目录里的内容，不要把源码、`.env`、`.tmp`、测试音频或本地日志打包进去。
-
-## 开源发布
-
-先确认你已经安装并登录 GitHub CLI：
-
-```powershell
-gh auth status
-```
-
-然后运行一键发布脚本：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/open-source-publish.ps1 -RepoName bilibili-ai-video-analysis-assistant
-```
-
-脚本会执行基础安全扫描、测试、类型检查、构建、创建 GitHub public repo、提交并推送代码。
-
-如果你只想手动发布，请看 [开源发布指南](docs/OPEN_SOURCE_RELEASE.md)。
-
-## 隐私政策
-
-商店用隐私政策在 `apps/extension/store/privacy-policy.html`。如果你已经部署到 GitHub Pages，请在商店后台填写对应 URL。
 
 ## License
 
