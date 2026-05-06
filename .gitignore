@@ -1,0 +1,30 @@
+node_modules
+dist
+.turbo
+coverage
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local agent/workspace artifacts
+.superpowers
+.tmp
+tmp-audio-tests
+apps/server/.tmp
+docs/superpowers
+
+# Build outputs
+apps/**/dist
+packages/**/dist
+
+# Store packages and local generated archives
+*.zip
+*.crx
+*.pem
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db

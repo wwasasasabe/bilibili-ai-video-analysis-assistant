@@ -1,0 +1,15 @@
+{
+  "name": "bilibili-video-sidebar-ai",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "build": "corepack pnpm -r build",
+    "dev:extension": "corepack pnpm --filter @app/extension dev",
+    "dev:server": "corepack pnpm --filter @app/server dev",
+    "test": "corepack pnpm -r test",
+    "typecheck": "corepack pnpm -r typecheck"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
