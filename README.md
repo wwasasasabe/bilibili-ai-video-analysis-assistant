@@ -56,3 +56,11 @@ corepack pnpm --filter @app/server dev
 - OSS 只作为临时中转，后端会在转写结束后删除临时对象。
 - 建议给 OSS Key 配置最小权限，并限制只允许访问指定 bucket/prefix。
 
+下面是样图，我自己测试的
+- <img width="2452" height="1359" alt="屏幕截图 2026-05-07 111013" src="https://github.com/user-attachments/assets/4cf85628-1aae-4db2-88fa-18324fca37b2" />
+<img width="2432" height="1357" alt="屏幕截图 2026-05-07 110926" src="https://github.com/user-attachments/assets/38454a8d-d5dd-4dda-a83e-efb968a66267" />
+<img width="2456" height="1354" alt="屏幕截图 2026-05-07 111159" src="https://github.com/user-attachments/assets/b3e9bae2-72a7-4cdf-93cd-38411ba31fc0" />
+需要自行填写这些，
+<img width="2447" height="1397" alt="屏幕截图 2026-05-07 104641" src="https://github.com/user-attachments/assets/00fcfa22-046f-4fda-ae56-5d94616ffc04" />
+
+
