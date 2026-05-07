@@ -71,4 +71,5 @@ cd "项目所在目录"
 corepack pnpm install
 corepack pnpm --filter @app/server dev
 ```
+来启动后端，且不要关闭powershell
 
