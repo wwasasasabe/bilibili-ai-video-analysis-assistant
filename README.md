@@ -65,4 +65,10 @@ corepack pnpm --filter @app/server dev
 ## 需要自行填写这些
 <img width="2447" height="1397" alt="屏幕截图 2026-05-07 104641" src="https://github.com/user-attachments/assets/00fcfa22-046f-4fda-ae56-5d94616ffc04" />
 
+每次启动插件前需要
+```powershell
+cd "项目所在目录"
+corepack pnpm install
+corepack pnpm --filter @app/server dev
+```
 
