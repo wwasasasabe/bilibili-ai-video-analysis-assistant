@@ -39,7 +39,7 @@ corepack pnpm --filter @app/extension build
 corepack pnpm --filter @app/server dev
 ```
 
-开发预览默认后端地址为 `http://127.0.0.1:3001`。扩展上架或给真实用户使用时，请让用户配置自己的后端，或者部署你自己的 HTTPS 后端。
+开发预览默认后端地址为 `http://127.0.0.1:3001`。扩展使用时，请配置自己的后端，或者部署你自己的 HTTPS 后端。
 
 ## API 和 OSS 配置
 
