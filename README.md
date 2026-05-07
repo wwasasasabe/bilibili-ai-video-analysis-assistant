@@ -22,7 +22,7 @@
 
 ```text
 apps/
-  extension/   Edge/Chromium 扩展前端、content script、background worker
+  extension/   Edge扩展前端、content script、background worker
   server/      本地或自托管后端，负责 OSS 临时中转和 ASR 任务
 packages/
   shared/      共享 schema、契约和视频长度工具
